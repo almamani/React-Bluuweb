@@ -1,0 +1,74 @@
+:root {
+  --sky-blue: #3090a1;
+  --sky-blue-dark: #0e6a7a;
+  --gray-basic: #b1aeae;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(46, 45, 45);
+  color: #b1aeae;
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: var(--sky-blue);
+  border: var(--sky-blue);
+  margin-right: 0.5rem;
+  color: whitesmoke;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--sky-blue-dark);
+}
+
+h1 {
+  margin-top: 2rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: var(--padding-contenedor);
+  overflow: hidden;
+}
+
+.contenedor__centrado {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.color__titulo {
+  color: var(--gray-basic);
+}
+
+.align_horizontal {
+  display: flex;
+}
+
+.space_inferior1 {
+  margin-bottom: 1rem;
+}
+
+.space_inferior2 {
+  margin-bottom: 2rem;
+}
+
+.color_sky_blue {
+  color: var(--sky-blue);
+}
