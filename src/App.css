@@ -61,6 +61,10 @@ h3 {
   display: flex;
 }
 
+.space_mini_inferior {
+  margin-bottom: 0.5rem;
+}
+
 .space_inferior1 {
   margin-bottom: 1rem;
 }
