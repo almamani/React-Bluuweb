@@ -1,0 +1,2 @@
+# Asegura que todos los archivos de texto usen LF (line feed) como salto de línea
+* text=auto eol=lf
