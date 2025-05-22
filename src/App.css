@@ -13,6 +13,7 @@ body {
 }
 
 button {
+  border-radius: 5px;
   padding: 0.5rem;
   background-color: var(--sky-blue);
   border: var(--sky-blue);
