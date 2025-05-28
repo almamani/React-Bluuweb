@@ -1,13 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useUserContext } from "../context/UserContext";
 
 const Home = () => {
+  const { setUser } = useUserContext();
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    setUser({ name: "Andreita" });
+    navigate("/clase6/");
+  };
+
   return (
     <div className="contenedor contenedor__centrado">
       <h1 className="color_sky_blue">Tutorial React</h1>
       <h2>Home</h2>
       <br />
       <br />
-      <table class="table table-dark table-striped">
+      <table className="table table-dark table-striped">
         <thead>
           <tr>
             <th scope="col">Clase</th>
@@ -67,6 +77,16 @@ const Home = () => {
               Uso de react-router-dom para generar la Nabar, uso del Link,
               traemos los datos con useLoaderData, combinando con index, loader,
               createBrowserRouter.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" className="text-center">
+              <button onClick={handleLogin}>6</button>
+            </th>
+            <td>Uso de Context - Logout</td>
+            <td>
+              Implementamos contex con el usuario habilitamos la clase 6 y la
+              podemos desloguear.
             </td>
           </tr>
         </tbody>
