@@ -1,13 +1,17 @@
 import { createBrowserRouter } from "react-router-dom";
+
 import LayoutPublic from "../layout/LayoutPublic";
+import LayoutPrivate from "../layout/LayoutPrivate";
 import Home from "../views/Home";
 import Clase1 from "../views/Clase1";
 import Clase2 from "../views/Clase2";
 import Clase3 from "../views/Clase3";
 import Clase4 from "../views/Clase4";
 import Clase5, { loaderBlog } from "../views/Clase5";
-import { loaderPost } from "../components/Post";
+import Clase6 from "../views/Clase6";
+
 import Post from "../components/Post";
+import { loaderPost } from "../components/Post";
 import NotFound from "../views/NotFound";
 
 export const router = createBrowserRouter([
@@ -47,6 +51,16 @@ export const router = createBrowserRouter([
             path: "/clase5/:id",
             element: <Post />,
             loader: loaderPost,
+          },
+          {
+            path: "/clase6",
+            element: <LayoutPrivate />,
+            children: [
+              {
+                index: true,
+                element: <Clase6 />,
+              },
+            ],
           },
         ],
       },

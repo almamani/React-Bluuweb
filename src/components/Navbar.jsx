@@ -1,6 +1,16 @@
 import { NavLink } from "react-router-dom";
 
+import { useUserContext } from "../context/UserContext";
+
 const Navbar = () => {
+  const { user, setUser } = useUserContext();
+
+  const handleLogout = () => {
+    setUser(false);
+    //Si querés reemplazar la ruta en el historial (evitar que el usuario pueda volver con el botón "Atrás")
+    //navigate("/", { replace: true });
+  };
+
   return (
     <nav className="navbar navbar-dark bg-dark">
       <div className="container">
@@ -22,6 +32,14 @@ const Navbar = () => {
         <NavLink to="/clase5" className="btn btn-outline-primary">
           Clase 05
         </NavLink>
+        {user && (
+          <>
+            <NavLink to="/clase6" className="btn btn-outline-primary">
+              Clase 06
+            </NavLink>
+            <button onClick={handleLogout}>Logout Clase 6</button>
+          </>
+        )}
       </div>
     </nav>
   );
