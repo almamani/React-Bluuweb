@@ -9,6 +9,7 @@ import Clase3 from "../views/Clase3";
 import Clase4 from "../views/Clase4";
 import Clase5, { loaderBlog } from "../views/Clase5";
 import Clase6 from "../views/Clase6";
+import Clase7 from "../views/Clase7";
 
 import Post from "../components/Post";
 import { loaderPost } from "../components/Post";
@@ -61,6 +62,10 @@ export const router = createBrowserRouter([
                 element: <Clase6 />,
               },
             ],
+          },
+          {
+            path: "/clase7/",
+            element: <Clase7 />,
           },
         ],
       },
