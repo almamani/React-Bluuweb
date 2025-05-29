@@ -40,6 +40,9 @@ const Navbar = () => {
             <button onClick={handleLogout}>Logout Clase 6</button>
           </>
         )}
+        <NavLink to="/clase7" className="btn btn-outline-primary">
+          Clase 07
+        </NavLink>
       </div>
     </nav>
   );
