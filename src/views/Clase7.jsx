@@ -1,4 +1,6 @@
+import Controled from "../compPractica/Controled";
 import CountPropio from "../compPractica/CountPropio";
+import NoControled from "../compPractica/NoControled";
 
 const Clase7 = () => {
   return (
@@ -12,6 +14,16 @@ const Clase7 = () => {
       </h3>
       <br />
       <CountPropio />
+      <br />
+      <br />
+      <h3 className="color_pink">Práctica Formulario No contolado</h3>
+      <br />
+      <NoControled />
+      <br />
+      <br />
+      <h3 className="color_pink">Formulario Controlado</h3>
+      <br />
+      <Controled />
     </div>
   );
 };
