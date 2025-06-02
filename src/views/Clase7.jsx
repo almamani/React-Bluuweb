@@ -1,6 +1,8 @@
 import Controled from "../compPractica/Controled";
 import CountPropio from "../compPractica/CountPropio";
+import FormAgenda from "../compPractica/FormAgenda";
 import NoControled from "../compPractica/NoControled";
+import Temporizador from "../compPractica/Temporizador";
 
 const Clase7 = () => {
   return (
@@ -24,6 +26,15 @@ const Clase7 = () => {
       <h3 className="color_pink">Formulario Controlado</h3>
       <br />
       <Controled />
+      <br />
+      <br />
+      <h3 className="color_pink">Ejemplo setInterval - Temporizador</h3>
+      <br />
+      <Temporizador />
+      <br />
+      <br />
+      <h3 className="color_pink">Formulario Carga Agenda</h3>
+      <FormAgenda />
     </div>
   );
 };
